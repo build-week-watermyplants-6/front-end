@@ -18,7 +18,7 @@ const Login = () => {
                         className="input" 
                     />
                 </div>
-                <div className="">
+                <div className="inputContainer">
                     <label htmlFor="password" className="label">Password: </label>
                     <input 
                         type="password" 
