@@ -1,0 +1,42 @@
+.card {
+    background-color: rgb(243, 236, 236);
+    border-radius: 4%;
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-right: 45px;
+    padding-top: 1%;
+  }
+  
+  .watering {
+    margin-top: 5px;
+  }
+  
+  .watering-img {
+    margin-top: 25px;
+    content: url(https://cdn-icons-png.flaticon.com/512/67/67739.png);
+    width: 30px;
+    height: 30px;
+    opacity: 50%;
+  }
+  
+  .watering-img:hover {
+    opacity: 100%;
+    transition: opacity 2s;
+  }
+  
+  .bottom-buttons {
+    background-color: #2b7e62;
+    color: rgb(208, 228, 213);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    margin-right: 5px;
+    padding: 6px;
+  }
+  
+  .button:hover {
+    color: #2e3b2f;
+    font-weight: bold;
+    border-radius: 4%;
+  }
