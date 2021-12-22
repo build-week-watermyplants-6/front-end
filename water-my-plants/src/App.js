@@ -1,23 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+// import Login from "./components/login-logout/Login";
+import Register from "./components/Register";
+// import Header from "./components/Header";
+// import plantData from "./plantData";
+// import Plant from "./components/Plant";
+// import { Route, Switch } from "react-router-dom";
+// import Profile from "./components/Profile";
+// import PlantsList from "./components/plants/PlantsList";
+// import Logout from "./components/Logout";
+// import Accessibility from "./components/Accessibility";
+// // import userinfo from "./userinfo";
+import "./App.css";
+
 
 function App() {
+  // const [plantsList, setPlantsList] = useState(plantData);
+  // console.log(plantsList)
+  // const [profile, setProfile] = useState(userinfo);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div> 
+      <Register />
+      {/* <Header />
+      <Switch>
+        <Route exact path="/register" component={Register} />
+        <Route exact path="/access">
+          <Accessibility
+            profile={profile}
+            setProfile={setProfile}
+            plantsList={plantsList}
+            setPlantsList={setPlantsList}
+          />
+        </Route>
+
+        <Route exact path="/" component={Login} />
+        <Route exact path="/plants">
+          <PlantsList plantsList={plantsList} setPlantsList={setPlantsList} />
+        </Route>
+
+        <Route exact path="/login" component={Login} />
+        <Route path="/plants/:id">
+          <Plant plantsList={plantsList} setPlantsList={setPlantsList} />
+        </Route>
+        <Route exact path="/profile">
+          <Profile profile={profile} setProfile={setProfile} />
+        </Route>
+        <Route exact path="/logout" component={Logout} />
+      </Switch> */}
     </div>
   );
 }
