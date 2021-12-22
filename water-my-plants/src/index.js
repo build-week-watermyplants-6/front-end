@@ -5,7 +5,7 @@ import { render } from "react-dom";
 import App from "./App";
 
 import { ThemeProvider } from "styled-components";
-import theme from "../src/Theme/index";
+import theme from "../src/theme/index";
 
 render(
   <ThemeProvider theme={theme}>
