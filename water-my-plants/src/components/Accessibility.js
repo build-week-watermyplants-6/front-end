@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 // import { Dialog, Transition } from "@headlessui/react";
-// import EditPlant from './EditPlant';
-// import plantList from './PlantsList';
+import EditPlant from './plants/EditPlant';
+import plantList from './plants/PlantsList';
 import plantlist from '../plantlist'
  import AccessStyles from '../theme/AccessStyles'
  import AccessPlants from '../theme/AccessPlants'
 // import App from "../App";
 
 function Accessibility(props) {
-  // const { plantList } = props;
+  const { plantList } = props;
   const [open, setOpen] = useState(false);
   const [apOpen,setApOpen] = useState(false);
   

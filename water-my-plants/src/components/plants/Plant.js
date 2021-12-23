@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { Dialog, Transition } from "@headlessui/react";
 import "./Plant.css";
 
-import EditPlant from "./components/plants/EditPlant";
+import EditPlant from "./EditPlant";
 
 const Plant = (props) => {
   const {
