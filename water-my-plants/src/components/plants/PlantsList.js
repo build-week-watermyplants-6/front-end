@@ -1,12 +1,12 @@
 import React, { Fragment, useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import AddPlant from "./AddPlant";
 import { Dialog, Transition } from "@headlessui/react";
-import { SpeakerphoneIcon } from "@heroicons/react/outline";
+// import { SpeakerphoneIcon } from "@heroicons/react/outline";
 
 const PlantsList = (props) => {
   const { plantsList, setPlantsList } = props;
-  const { push } = useHistory();
+  const { push } = useNavigate();
   const [open, setOpen] = useState(false);
   const handleClick = (e, plant) => {
     e.preventDefault();
@@ -120,10 +120,10 @@ const PlantsList = (props) => {
             <div className="flex items-center justify-between flex-wrap">
               <div className="w-0 flex-1 flex items-center">
                 <span className="flex p-2 rounded-lg bg-green-800">
-                  <SpeakerphoneIcon
+                  {/* <SpeakerphoneIcon
                     className="h-6 w-6 text-white"
                     aria-hidden="true"
-                  />
+                  /> */}
                 </span>
                 <p className="ml-3 font-medium text-white truncate">
                   <span className="hidden md:inline">

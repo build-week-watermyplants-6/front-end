@@ -2,7 +2,7 @@ import React, {
     // useEffect,
     useState,
   } from "react";
-  import Accessibility from "./Accessibility";
+  import Accessibility from "../Accessibility";
   
   const initialForm = {
     plant_id: 8,

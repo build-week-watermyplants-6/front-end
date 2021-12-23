@@ -1,27 +1,27 @@
 import React, { useState } from "react";
-// import Login from "./components/login-logout/Login";
+import Login from "./components/login-logout/Login";
 import Register from "./components/Register";
-// import Header from "./components/Header";
-// import plantData from "./plantData";
-// import Plant from "./components/Plant";
-// import { Route, Switch } from "react-router-dom";
-// import Profile from "./components/Profile";
-// import PlantsList from "./components/plants/PlantsList";
-// import Logout from "./components/Logout";
-// import Accessibility from "./components/Accessibility";
-// // import userinfo from "./userinfo";
+import Header from "./components/Header";
+import plantList from "./plantlist";
+import Plant from "./components/plants/Plant";
+import { Route, Switch } from "react-router-dom";
+import Profile from "./components/Profile";
+import PlantsList from "./components/plants/PlantsList";
+import Logout from "./components/login-logout/Logout";
+import Accessibility from "./components/Accessibility";
+import userinfo from "./userinfo";
 import "./App.css";
 
 
 function App() {
-  // const [plantsList, setPlantsList] = useState(plantData);
-  // console.log(plantsList)
-  // const [profile, setProfile] = useState(userinfo);
+  const [plantsList, setPlantsList] = useState(plantList);
+  console.log(plantsList)
+  const [profile, setProfile] = useState(userinfo);
   return (
     <div> 
       <Register />
-      {/* <Header />
-      <Switch>
+      <Header />
+      {/* <Switch> */}
         <Route exact path="/register" component={Register} />
         <Route exact path="/access">
           <Accessibility
@@ -45,7 +45,7 @@ function App() {
           <Profile profile={profile} setProfile={setProfile} />
         </Route>
         <Route exact path="/logout" component={Logout} />
-      </Switch> */}
+      {/* </Switch> */}
     </div>
   );
 }
